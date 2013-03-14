@@ -1,0 +1,292 @@
+
+/**
+ * @file
+ * Stark layout method
+ *
+ * To avoid obscuring CSS added to the page by Drupal or a contrib module, the
+ * Stark theme itself has no styling, except just enough CSS to arrange the page
+ * in a traditional "Header, sidebars, content, and footer" layout.
+ *
+ * This layout method works reasonably well, but shouldn't be used on a
+ * production site because it can break. For example, if an over-large image
+ * (one that is wider than 20% of the viewport) is in the left sidebar, the
+ * image will overlap with the #content to the right. The exception to this
+ * is IE6 which will just hide the navigation block completely in these
+ * instances due to a positioning bug.
+ */
+
+
+/* Include padding within the width, instead of in-addition */ 
+ * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Set up the site for small devices like phones in portrait mode */
+/* Designed to look good between 300px and 400px									*/
+
+html {
+	width:100%;
+  margin:0 auto;
+	text-align:center;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+
+body {
+ margin:0 auto;
+ padding:0
+ text-align:center;
+ width:100%;
+ font-size:14px;
+ background-color:#c8c7c4;
+}
+
+#page-wrapper {
+	margin:0 auto;
+	position:relative;
+	width:100%;
+	text-align:left;
+	width:960px;
+	height:760px;
+	background-image:url(images/art-bg.png);
+	background-repeat:repeat-y;
+	background-position:center;
+}
+
+
+#content,
+#sidebar-first,
+#sidebar-second {
+  float: left;
+}
+
+#sidebar-first {
+	width:180px;
+}
+
+#content {
+	width:570px;
+	height:760px;
+	margin-right:15px;
+	margin-left:15px;
+	background-color:#606060;
+	padding:10px;
+}
+
+.front #content img {
+	width:100%;
+	margin-top:35px;
+}
+
+/*logo*/
+#block-block-1 { 
+ float:left;
+ width:100%;
+}
+
+
+#sidebar-second {
+	width:180px;
+}
+
+#title {
+  float:left;
+	width:100%;
+	text-align:right;
+	padding-right:10px;
+	color:#e0dfd9;
+	font-size:24px;
+	margin-top:10px;
+}
+
+#addr {
+  float:left;
+	width:100%;
+	text-align:right;
+	padding-right:10px;
+	color:#e0dfd9;
+	font-size:14px;
+	margin-top:4px;
+}
+	
+
+
+
+/* Main Menu */
+
+#block-menu-block-1 {
+	float:left;
+	width:100%;
+	margin-top:30px;
+}
+
+#block-menu-block-1 ul.menu,
+#block-menu-menu-menu-two ul.menu {
+	padding:0;
+	margin:0;
+	float:right;
+	text-align:right;
+	width:100%;
+}
+
+#block-menu-block-1 ul.menu li {
+	margin:6px 0 6px 0;
+	list-style:none;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:1.5em;
+	float:right;
+	width:100%;
+	padding-right:10px;
+}
+
+#block-menu-block-1 ul.menu li ul li {
+	margin:4px 0;
+	padding:0;
+	font-size:.70em;
+	text-transform:none;
+	float:right;
+	width:100%;       
+}
+
+#block-menu-block-1 ul.menu li ul li a {
+ letter-spacing:1px;
+ text-transform:lowercase;
+}
+
+#block-menu-menu-menu-two ul.menu li {
+	margin:6px 0;
+	list-style:none;
+	text-decoration:none;
+	font-size:1.1em;
+	padding-right:10px;
+}
+
+ul.menu li a {
+  color:#636261;
+}
+
+/* logo */
+#block-block-1 {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size:34px;
+	color:#404714;
+	width:100%;
+	text-align:center;
+}
+
+h1 {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size:30px;
+	color:#C8C7C4;
+	width:100%;
+	text-align:left;
+	font-weight:400;
+}
+	
+p {
+	color:white;
+	float:left;
+}
+
+#main .node-artwork img {
+	width:100%;
+	float:left;
+	height:auto;
+	margin-top:30px;
+}
+
+#main .node-artwork .field-name-field-artist {
+	color:#C8C7C4;
+}
+
+
+#block-block-1  {
+	float:left;
+	width:100%;
+	margin:40px 0;
+}
+
+#block-menu-block-1 ul.menu .menu-mlid-306 {
+	margin-top:10px;
+}
+
+#block-block-1 .studio,
+#block-block-1 .rabbit {
+		text-transform:uppercase;
+		letter-spacing:1px;
+}
+
+#block-block-1 .rabbit {
+	letter-spacing:8px;
+}
+	
+
+#block-block-1 #locale {
+  color:#9c3152;
+	font-size:16px;
+	letter-spacing:1.2px;
+	margin-top:2px;
+}
+
+#block-views-works-block {
+	float:left;
+	width:100%;
+	padding:30px 40px 40px 40px;
+	text-align:center;
+}
+
+.view-works .views-field-title {
+	float:right;
+	width:100%;
+}
+
+.view-works .views-field-title a, 
+.view-works .views-field-title-1 a {
+	color:#636261;
+	font-size:10px;
+	margin:0;
+	padding:0;
+}
+
+
+
+.view-works .views-field-title-1,
+.view-works .views-field-title-1 a{
+	font-size:9px;
+	line-height:10px;
+}
+
+.view-works .views-row {
+	margin-bottom:60px;
+}
+
+.view-artists  .views-field-title-1,
+.view-artists  .views-field-field-artist-photo {
+	display:block;
+}
+
+.view-artists {
+	float:left;
+	width:100%;
+}
+
+.view-artists .views-field-title-1 a {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size:24px;
+	color:#e0dfd9;
+	float:left;
+	width:100%;
+	margin-bottom:20px;
+	padding-left:10px;
+}
+.view-artists .views-field-field-artist-photo {
+	padding:10px;
+	float:left;
+	width:100%;
+	text-align:left;
+}
+
+.view-artists .views-field-field-photos {
+	float:left;
+	width:25%;
+	text-align:center;
+	height:120px;
+}

@@ -182,9 +182,9 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'WENDY_DB',
-      'username' => 'WENDY_USER',
-      'password' => 'WENDY_PW',
+      'database' => 'MCCAULEY_DB',
+      'username' => 'MCCAULEY_USER',
+      'password' => 'MCCAULEY_PW',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',

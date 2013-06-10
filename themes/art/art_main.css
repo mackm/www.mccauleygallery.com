@@ -1,18 +1,9 @@
 
 /**
  * @file
- * Stark layout method
  *
- * To avoid obscuring CSS added to the page by Drupal or a contrib module, the
- * Stark theme itself has no styling, except just enough CSS to arrange the page
- * in a traditional "Header, sidebars, content, and footer" layout.
+ * art_main.css - Theme for www.mccauleygallery.com
  *
- * This layout method works reasonably well, but shouldn't be used on a
- * production site because it can break. For example, if an over-large image
- * (one that is wider than 20% of the viewport) is in the left sidebar, the
- * image will overlap with the #content to the right. The exception to this
- * is IE6 which will just hide the navigation block completely in these
- * instances due to a positioning bug.
  */
 
 
@@ -26,7 +17,7 @@ html {
 	width:100%;
   margin:0 auto;
 	text-align:center;
-	font-family:Tahoma, Geneva, sans-serif;
+	font-family:Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -35,7 +26,6 @@ body {
  text-align:center;
  width:100%;
  font-size:14px;
- background-color:#c8c7c4;
 }
 
 #page-wrapper {
@@ -43,250 +33,272 @@ body {
 	position:relative;
 	width:100%;
 	text-align:left;
-	width:960px;
-	height:760px;
-	background-image:url(images/art-bg.png);
-	background-repeat:repeat-y;
-	background-position:center;
+	width:1020px;
 }
 
-
-#content,
-#sidebar-first,
-#sidebar-second {
-  float: left;
+#header {
+	margin-top:40px;
+	float:left;
+	width:100%;
 }
 
 #sidebar-first {
-	width:180px;
+	float:left;
+	width:260px;
+}
+
+#block-views-artists-block {
+	float:left;
+	width:100%;
+	margin-top:50px;
+}
+
+#block-views-artists-block h2 {
+	font-size:14px;
+	text-transform:uppercase;
+	color:#6d7071;
+	margin:5px 0;
+	font-weight:400;
+}
+
+#block-views-artists-block a {
+	text-transform:uppercase;
+	font-size:12px;
+	color:#999c9d;
+}
+
+#header #top-line {
+	width:100%;
+	float:left;
+	border-bottom: 2px solid #6d7071;
+	position:relative;
+	padding-bottom:2px;
+}
+
+#header #second-line {
+	float:left;
+	margin-top:6px;
+}
+
+#header #top-line .logo,
+#header #second-line .logo {
+	font-size:24px;
+	color:black;
+	width:260px;
+	float:left;
+	letter-spacing:1px;
+}
+
+#header #second-line .logo {
+	padding-left:38px;
+	
+}
+
+#header #top-line .phone,
+#header #top-line .email,
+#header #top-line .address {
+	float:left;
+	position:relative;
+	top:10px;
+	margin-right:35px;
+	font-size:12px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color:#999c9d;
+}
+
+#header #top-line .email a {
+	color:#999c9d;
+}
+
+#header #block-system-main-menu {
+	float:left;
+	margin-top:6px;
+}
+
+#header #block-system-main-menu ul {
+	margin:0;
+	padding:0;
+}
+
+#header #block-system-main-menu ul li {
+	display:inline;
+	margin:0 45px 0 0;
+	padding:0;
+	text-transform:uppercase;
+	font-size:12px;
+	letter-spacing:3px;
+}
+
+#header #block-system-main-menu ul li a {
+  color:#999c9d;
+}
+	
+
+#sidebar {
+	float:left;
+	width:260px;
 }
 
 #content {
-	width:570px;
-	height:760px;
-	margin-right:15px;
-	margin-left:15px;
-	background-color:#606060;
+	float:right;
+	width:760px;
 	padding:10px;
 }
 
-.front #content img {
-	width:100%;
-	margin-top:35px;
-}
-
-/*logo*/
-#block-block-1 { 
- float:left;
- width:100%;
-}
-
-
-#sidebar-second {
-	width:180px;
-}
-
-#title {
-  float:left;
-	width:100%;
-	text-align:right;
-	padding-right:10px;
-	color:#e0dfd9;
-	font-size:24px;
-	margin-top:10px;
-}
-
-#addr {
-  float:left;
-	width:100%;
-	text-align:right;
-	padding-right:10px;
-	color:#e0dfd9;
-	font-size:14px;
-	margin-top:4px;
-}
-	
-
-
-
-/* Main Menu */
-
-#block-menu-block-1 {
-	float:left;
-	width:100%;
-	margin-top:30px;
-}
-
-#block-menu-block-1 ul.menu,
-#block-menu-menu-menu-two ul.menu {
-	padding:0;
-	margin:0;
-	float:right;
-	text-align:right;
-	width:100%;
-}
-
-#block-menu-block-1 ul.menu li {
-	margin:6px 0 6px 0;
-	list-style:none;
-	text-decoration:none;
-	text-transform:uppercase;
-	font-size:1.5em;
-	float:right;
-	width:100%;
-	padding-right:10px;
-}
-
-#block-menu-block-1 ul.menu li ul li {
-	margin:4px 0;
-	padding:0;
-	font-size:.70em;
-	text-transform:none;
-	float:right;
-	width:100%;       
-}
-
-#block-menu-block-1 ul.menu li ul li a {
- letter-spacing:1px;
- text-transform:lowercase;
-}
-
-#block-menu-menu-menu-two ul.menu li {
-	margin:6px 0;
-	list-style:none;
-	text-decoration:none;
-	font-size:1.1em;
-	padding-right:10px;
-}
-
-ul.menu li a {
-  color:#636261;
-}
-
-/* logo */
-#block-block-1 {
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-	font-size:34px;
-	color:#404714;
-	width:100%;
-	text-align:center;
-}
-
-h1 {
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+.view-artist-work .views-field-title {
 	font-size:30px;
-	color:#C8C7C4;
-	width:100%;
-	text-align:left;
-	font-weight:400;
 }
-	
-p {
-	color:white;
+
+.view-artist-work .views-field-title a {
+	color:#6d7071;
+}
+
+.field-name-field-width {
 	float:left;
 }
 
-#main .node-artwork img {
-	width:100%;
+.field-name-field-height {
 	float:left;
-	height:auto;
-	margin-top:30px;
 }
 
-#main .node-artwork .field-name-field-artist {
-	color:#C8C7C4;
+.field-name-field-medium {
+	float:left;
+	clear;right;
+	margin-left:.5em;
 }
 
-
-#block-block-1  {
+.field-name-field-price {
 	float:left;
 	width:100%;
-	margin:40px 0;
+}
+.page-node .node-readmore,
+.view-artist-work .node-readmore
+{
+	display:none;
 }
 
-#block-menu-block-1 ul.menu .menu-mlid-306 {
-	margin-top:10px;
+.front h1 {
+	display:none;
 }
 
-#block-block-1 .studio,
-#block-block-1 .rabbit {
-		text-transform:uppercase;
-		letter-spacing:1px;
+.node-artist {
+	margin-left:0;
+}
+.view-artists .views-row {
+	margin-bottom:4px;
 }
 
-#block-block-1 .rabbit {
-	letter-spacing:8px;
-}
-	
-
-#block-block-1 #locale {
-  color:#9c3152;
-	font-size:16px;
-	letter-spacing:1.2px;
-	margin-top:2px;
-}
-
-#block-views-works-block {
-	float:left;
-	width:100%;
-	padding:30px 40px 40px 40px;
-	text-align:center;
-}
-
-.view-works .views-field-title {
-	float:right;
-	width:100%;
-}
-
-.view-works .views-field-title a, 
-.view-works .views-field-title-1 a {
-	color:#636261;
-	font-size:10px;
+.node-artwork h2 {
+	font-size:14px;
+	color:black;
 	margin:0;
-	padding:0;
 }
 
-
-
-.view-works .views-field-title-1,
-.view-works .views-field-title-1 a{
-	font-size:9px;
-	line-height:10px;
+.node-artwork h2 a {
+	color:black;
 }
 
-.view-works .views-row {
-	margin-bottom:60px;
+.field-name-field-works {
+	float:left;
+	width:100%;
+	margin-bottom:40px;
 }
 
-.view-artists  .views-field-title-1,
-.view-artists  .views-field-field-artist-photo {
+.field-name-field-works .node-artwork {
+	margin-bottom:40px;
+}
+
+.breadcrumb {
+	display:none;
+}
+
+/* temporary? */
+.page-artist-work h1 {
+	display:none;
+}
+
+/* Home page shows view */
+
+.view-shows .views-field-field-name,
+.view-shows .views-field-field-dates {
+	display:none;
+}
+
+.view-shows .views-row-1 .views-field-field-name,
+.view-shows .views-row-1 .views-field-field-dates {
 	display:block;
+	color: #6D7071;
 }
 
-.view-artists {
-	float:left;
-	width:100%;
-}
-
-.view-artists .views-field-title-1 a {
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+.view-shows .views-row-1 .views-field-field-name {
+	margin-top:20px;
 	font-size:24px;
-	color:#e0dfd9;
-	float:left;
-	width:100%;
 	margin-bottom:20px;
-	padding-left:10px;
-}
-.view-artists .views-field-field-artist-photo {
-	padding:10px;
-	float:left;
-	width:100%;
-	text-align:left;
 }
 
-.view-artists .views-field-field-photos {
-	float:left;
-	width:25%;
-	text-align:center;
-	height:120px;
+.view-shows .views-row-1 .views-field-field-dates {
+  font-size:18px;
+	margin-bottom:20px;
 }
+
+.view-shows .views-row-2 {
+	margin-top:104px;
+}
+
+.view-shows .field-name-field-artist a {
+	font-size:18px;
+	color:black;
+	margin-bottom:10px;
+	float:left;
+	width:100%;
+}
+
+
+.view-shows .field-name-field-art-image {
+	float:left;
+	width:100%;
+
+}
+
+.view-shows .node-artwork h2{
+	float:left;
+	width:100%;
+	font-size:12px;
+}
+
+.view-shows .views-row {
+	float:left;
+	width:370px;
+	min-height:400px;
+}
+
+.view-shows .field-name-field-height,
+.view-shows .field-name-field-width,
+.view-shows .field-name-field-medium {
+	font-size:10px;
+}
+
+#block-system-main {
+	float:left;
+	width:100%;
+}
+
+.node-page {
+	width:100%;
+	float:left;
+}
+
+.front .node-page {
+	margin-top:40px;
+}
+
+.field-name-field-art-image a img.rss {
+	max-width:350px;
+}
+
+.node-type-page .field-name-body {
+	margin-right:40px;
+}
+
+

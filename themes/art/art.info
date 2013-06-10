@@ -6,7 +6,10 @@ core = 7.x
 stylesheets[all][] = art_reset.css
 stylesheets[all][] = art_main.css
 
-regions[sidebar_first] = Sidebar first
+regions[header] = Header
 regions[content] = Content
-regions[sidebar_second] = Sidebar second
 regions[footer] = Footer
+regions[highlighted] = Highlighted - not used
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second - not used
+

@@ -241,6 +241,8 @@ body {
 	margin-top:20px;
 	font-size:24px;
 	margin-bottom:20px;
+	width:700px;
+	text-transform:uppercase;
 }
 
 .view-shows .views-row-1 .views-field-field-dates {

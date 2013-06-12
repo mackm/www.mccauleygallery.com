@@ -56,7 +56,7 @@ body {
 #block-views-artists-block h2 {
 	font-size:14px;
 	text-transform:uppercase;
-	color:#6d7071;
+	color:#575757;
 	margin:5px 0;
 	font-weight:400;
 }
@@ -143,7 +143,11 @@ body {
 #content {
 	float:right;
 	width:760px;
-	padding:10px;
+}
+
+#content .region-content {
+	margin-left:10px;
+	margin-right:10px;
 }
 
 .view-artist-work .views-field-title {
@@ -206,7 +210,7 @@ body {
 }
 
 .field-name-field-works .node-artwork {
-	margin-bottom:60px;
+	margin-bottom:40px;
 }
 
 .breadcrumb {
@@ -228,7 +232,9 @@ body {
 .view-shows .views-row-1 .views-field-field-name,
 .view-shows .views-row-1 .views-field-field-dates {
 	display:block;
-	color: #6D7071;
+	color: #575757;
+	position:relative;
+	left:-10px;
 }
 
 .view-shows .views-row-1 .views-field-field-name {

@@ -311,3 +311,39 @@ body {
 }
 
 
+/* Inventory List */
+
+.view-inventory .views-field-title a {
+	float:left;
+	color:black;
+	padding-right:10px;
+}
+
+
+.view-inventory .views-field-field-height,
+.view-inventory .views-field-field-artist,
+.view-inventory .views-field-field-medium,
+.view-inventory .views-field-field-price,
+.view-inventory .views-field-field-price span {
+	float:left;
+	padding-right:10px;
+}
+.view-inventory .views-field-field-price div,
+.view-inventory .views-field-field-width {
+	float:left;
+}
+	
+.view-inventory .views-field-field-art-image {
+	float:left;
+	width:100%;
+}
+
+.view-inventory .views-row {
+	float:left;
+	width:100%;
+	margin-bottom:15px;
+}
+	
+	
+
+

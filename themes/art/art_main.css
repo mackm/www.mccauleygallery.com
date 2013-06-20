@@ -343,6 +343,17 @@ body {
 	width:100%;
 	margin-bottom:15px;
 }
+
+/* Individual artwork pages */
+
+.node-type-artwork .field-name-field-artist {
+	float:left;
+	width:100%;
+}
+
+.node-type-artwork .field-name-field-artist a {
+	color:#326077;
+}
 	
 	
 

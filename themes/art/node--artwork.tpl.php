@@ -104,7 +104,7 @@
       }
       hide($content['field_price']);
       print render($content);
-      if ($field_price['0']['value'] == '0.00') {
+      if (isset($field_price['0']) && $field_price['0']['value'] == '0.00') {
         print('<div class="field field-name-field-price field-type-number-decimal field-label-hidden"><div class="field-items"><div class="field-item even">NFS</div></div></div>');  
       }
       else if (isset($field_sold_to['und'])){

@@ -102,8 +102,18 @@
         print('<h2><a href="'.$node_url.'">'.$title.'</a></h2>');
         print render($title_suffix);
       }
-      
+      hide($content['field_price']);
       print render($content);
+      if ($field_price['0']['value'] == '0.00') {
+        print('<div class="field field-name-field-price field-type-number-decimal field-label-hidden"><div class="field-items"><div class="field-item even">NFS</div></div></div>');  
+      }
+      else if (isset($field_sold_to['und'])){
+        print('<div class="field field-name-field-price field-type-number-decimal field-label-hidden"><div class="field-items"><div class="field-item even sold">Sold</div></div></div>');  
+      }
+        else {  
+        print render($content['field_price']);
+      }
+      
     ?>
   </div>
 

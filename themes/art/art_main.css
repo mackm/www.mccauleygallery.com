@@ -258,7 +258,7 @@ body {
 .view-shows .field-name-field-artist a {
 	font-size:18px;
 	color:black;
-	margin-bottom:10px;
+	margin-bottom:2px;
 	float:left;
 	width:100%;
 }
@@ -354,7 +354,14 @@ body {
 .node-type-artwork .field-name-field-artist a {
 	color:#326077;
 }
-	
+
+.field-name-field-price .sold {
+	background-image:url(images/reddot.png);
+	background-position:left 2px;
+	background-repeat:no-repeat;
+	padding-left:13px;
+	font-size:13px;
+}
 	
 
 

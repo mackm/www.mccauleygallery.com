@@ -363,5 +363,35 @@ body {
 	font-size:13px;
 }
 	
+#content ul,
+#content ul li {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	list-style-image:none;
+	font-size:16px;
+}
 
+#content ul li {
+	margin: 12px 0;
+}
+
+
+/* Special in-gallery slideshow of current works */
+
+.page-show #page-wrapper {
+	width:100%;
+}
+
+.page-show #content {
+	width:100%;
+}
+
+.page-show #content img {
+	max-width:100%;
+}
+
+.page-show #sidebr-first {
+	display:none;
+}
 

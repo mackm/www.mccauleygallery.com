@@ -422,3 +422,7 @@ body {
 .page-blog .view-blog {
 	margin-bottom:80px;
 }
+
+.page-node #mc_embed_signup form {
+	padding:0;
+}

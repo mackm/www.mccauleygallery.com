@@ -33,7 +33,9 @@ body {
 	position:relative;
 	width:100%;
 	text-align:left;
-	width:1020px;
+	width:1060px;
+	padding-left:20px;
+	padding-right:20px;
 }
 
 #header {
@@ -256,11 +258,13 @@ body {
 }
 
 .view-shows .field-name-field-artist a {
-	font-size:18px;
+	font-size:15px;
 	color:black;
 	margin-bottom:2px;
 	float:left;
 	width:100%;
+	text-transform:uppercase;
+	color:#575757;
 }
 
 
@@ -395,3 +399,26 @@ body {
 	display:none;
 }
 
+.page-blog h1 {
+	color:#575757;
+	font-weight:400;
+	margin-bottom:0;
+}
+
+.page-blog h2 a {
+	padding-top:10px;
+	color:black;
+	font-weight:400;
+	border-top:dotted 2px #575757;
+	width:100%;
+	float:left;
+}
+
+.page-blog .views-row .content {
+	float:left;
+	width:100%;
+}
+
+.page-blog .view-blog {
+	margin-bottom:80px;
+}

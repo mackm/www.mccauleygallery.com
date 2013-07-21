@@ -226,6 +226,60 @@ body {
 
 /* Home page shows view */
 
+
+
+
+.view-shows {
+	float:left;
+	width:100%;
+}
+
+.view-shows .views-row {
+	float:left;
+	width:100%;
+	margin-bottom:40px;
+}
+.node-show h2,
+.node-show h2 a {
+	text-transform:uppercase;
+	color:#575757;
+	margin-bottom:0;
+}
+
+.node-show .node-artist h2,
+.node-show .node-artist h2 a {
+	text-transform:none;
+	color:black;
+	margin-bottom:0;
+}
+
+.node-show .field-name-field-dates {
+	margin-top:4px;
+	text-transform:uppercase;
+	margin-left:5px;
+	font-size:12px;
+}
+
+.node-show .field-name-field-price {
+	display:none;
+}
+
+.node-show .field-name-field-artists .field-item {
+	margin-bottom:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .view-shows .views-field-field-name,
 .view-shows .views-field-field-dates {
 	display:none;
@@ -292,6 +346,9 @@ body {
 	font-size:10px;
 }
 
+
+*/
+
 #block-system-main {
 	float:left;
 	width:100%;
@@ -302,9 +359,6 @@ body {
 	float:left;
 }
 
-.front .node-page {
-	margin-top:40px;
-}
 
 .field-name-field-art-image a img.rss {
 	max-width:350px;

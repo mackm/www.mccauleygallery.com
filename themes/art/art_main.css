@@ -237,13 +237,15 @@ body {
 .view-shows .views-row {
 	float:left;
 	width:100%;
-	margin-bottom:40px;
+	margin-bottom:30px;
 }
 .node-show h2,
 .node-show h2 a {
 	text-transform:uppercase;
 	color:#575757;
 	margin-bottom:0;
+	width:100%;
+	border-bottom:2px solid #575757;
 }
 
 .node-show .node-artist h2,
@@ -251,7 +253,15 @@ body {
 	text-transform:none;
 	color:black;
 	margin-bottom:0;
+	border-bottom:none;
+	color:#999C9D;
 }
+
+.node-show .node-artist .node-artwork h2,
+.node-show .node-artist .node-artwork h2 a {
+	color:#575757;
+}
+
 
 .node-show .field-name-field-dates {
 	margin-top:4px;
@@ -260,23 +270,12 @@ body {
 	font-size:12px;
 }
 
-.node-show .field-name-field-price {
+.node-show .field-name-field-price,
+.node-show .field-name-field-medium,
+.node-show .field-name-field-height,
+.node-show .field-name-field-width {
 	display:none;
 }
-
-.node-show .field-name-field-artists .field-item {
-	margin-bottom:10px;
-}
-
-
-
-
-
-
-
-
-
-
 
 
 /*

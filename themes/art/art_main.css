@@ -255,7 +255,10 @@ body {
 	width:100%;
 	border-bottom:2px solid #575757;
 	margin-top:20px;
+}
 
+.field-name-field-promo-piece h2 {
+	margin-top:0;
 }
 
 .node-show .node-artist h2,

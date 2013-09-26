@@ -492,3 +492,42 @@ body {
 .page-node #mc_embed_signup form {
 	padding:0;
 }
+
+
+
+/* Artist work views */
+
+.view-artist-work .views-row {
+	margin-bottom:30px;
+}
+
+.view-display-id-block_3 .views-row {
+	float:left;
+	width:33%;
+	padding-right:10px;
+	height:240px;
+}
+
+.view-display-id-block_3 .views-row img {
+	float:left;
+	width:100%;
+	height:auto;
+}
+
+.view-display-id-block_3 .views-row .field-name-field-art-image {
+	float:left;
+	width:100%;
+	margin-bottom:5px;
+}
+
+#block-views-artist-work-block-3 h2 {
+	color:#999C9D;
+}
+
+.view-artist-work .field-name-field-medium {
+	float:left;
+	width:100%;
+	margin-left:0;
+}
+
+	

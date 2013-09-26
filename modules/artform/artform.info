@@ -1,0 +1,6 @@
+name = artform
+description = Hook form saves sand provide side-effects
+package = swiftsure
+version = VERSION
+core = 7.x
+files[] = artform.module

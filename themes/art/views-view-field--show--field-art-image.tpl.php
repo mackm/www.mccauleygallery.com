@@ -29,7 +29,7 @@
     $artTitle = $row->field_field_art_image['0']['rendered']['#node']->title;
   else
     $artTitle = "Title Unspecified";
-    
+  
   $pre = strstr($output, 'title=',true);
   $post = strstr($output, 'class=', false);
   $newoutput = $pre.' title="'.$artist.' - '.$artTitle.'" '.$post;  

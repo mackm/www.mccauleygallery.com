@@ -1,0 +1,32 @@
+<?php
+
+/**
+*
+* Register form submssion hooks for the member sub-components.
+*
+**/
+function artform_form_sale_node_form_alter(&$form, &$form_state, $form_id){
+  
+	$form['actions']['submit']['#submit'][] = 'artform_do_update_artwork';
+}
+
+
+/**
+*
+* Form submssion hook for member record sub-components. Redirects completion of event, photo, 
+* contact, and special forms back to the member node they came from. 
+*
+**/
+function artform_do_update_artwork($form, &$form_state)
+{  
+  
+  $artnodes = $form_state['node']->field_artworks_purchased['und'];
+  
+  foreach($artnodes as $id => $val) {
+    $work = node_load($val['nid']);
+    $work->field_artwork_status['und']['0']['tid'] = 31; /* Sold */
+    node_save($work);
+  }
+  
+
+}

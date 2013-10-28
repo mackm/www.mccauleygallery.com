@@ -101,6 +101,8 @@
         print render($title_prefix);
         print('<h2><a href="'.$node_url.'">'.$title.'</a></h2>');
         print render($title_suffix);
+        if ($view_mode == 'full')
+          print('<div class="art-node">Item: '.$nid.'</div>');
       }
       hide($content['field_price']);
       print render($content);

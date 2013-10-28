@@ -211,7 +211,7 @@ body {
 	float:left;
 }
 
-.node-artwork {
+.node-type-artwork .node-artwork {
 	position:relative;
 	width:480px;
 }
